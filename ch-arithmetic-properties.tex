@@ -77,7 +77,7 @@ cho cùng một ý. Giống như người Mỹ gọi là “truck” còn ngư�
 sẽ thống nhất một số từ để dùng trong cuốn sách này cho rõ ràng nhé.
 
 
-Hình dưới là \emph{đường số}. Đường số kéo dài mãi về hai phía.
+Hình dưới là \emph{trục số}. Trục số kéo dài mãi về hai phía.
 Mỗi vạch nhỏ chỉ một \emph{số nguyên}. Ta thấy các số
 \[
 \ldots,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,\ldots
@@ -87,8 +87,8 @@ Mỗi vạch nhỏ chỉ một \emph{số nguyên}. Ta thấy các số
   \centering
   % Dùng bản PDF khi biên dịch LaTeX
   \includegraphics[width=0.9\textwidth]{img/fig-numberline.pdf}
-  \caption*{\small Đường số với các vạch từ $-6$ đến $6$ và mũi tên chỉ rằng
-  đường số còn kéo dài nữa.}
+  \caption*{\small Trục số với các vạch từ $-6$ đến $6$ và mũi tên chỉ rằng
+  trục số còn kéo dài nữa.}
 \end{figure}
 
 \noindent\textbf{Tên gọi đơn giản:}
@@ -105,7 +105,6 @@ Mỗi vạch nhỏ chỉ một \emph{số nguyên}. Ta thấy các số
 có nơi tính cả $0$. Trong tài liệu này, ta dùng: \emph{số nguyên dương}
 cho $1,2,3,\ldots$ và \emph{số nguyên không âm} cho $0,1,2,\ldots$.
 \end{quote}
-
 
 \section{Phép cộng}
 
@@ -459,6 +458,7 @@ a + 0 = a.
 %============================
 % 1.3  PHÉP NHÂN
 %============================
+
 \section{Phép nhân}
 
 \noindent Ta bắt đầu khám phá phép toán tiếp theo: \emph{phép nhân}.
@@ -1057,3 +1057,437 @@ Cho \(x\) là một số bất kỳ. Khi đó
         \hfill\small(Nguồn: MATHCOUNTS)
   \item Tính \(10+110\cdot0\cdot101+111\).
 \end{enumerate}
+
+%============================
+% 1.4  số đối (Negation)
+%============================
+
+\section{Số đối}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.85\textwidth]{img/fig-numberline.pdf}
+  \caption*{\small Đường số từ $-6$ đến $6$.}
+\end{figure}
+
+Hãy nhìn vào đường số ở trên. Chú ý rằng $-2$ và $2$ cách đều điểm $0$,
+nhưng nằm ở hai phía đối nhau của $0$. Vậy điều gì xảy ra khi ta cộng
+$-2+2$? Tất nhiên, con biết rằng chúng ta có thể hình dung tổng \(-2+2\) trên đường số như bắt đầu tại vị trí
+\(-2\) rồi đi sang phải \(2\) đơn vị, kết thúc tại \(0\).
+Ý tưởng “hai số cộng lại được \(0\)” chính là chìa khóa của khái niệm
+\emph{số đối} (negation):
+
+\begin{tcolorbox}[colback=yellow!10, colframe=orange!80!black,
+title={Định nghĩa: Số đối của một số}]
+\textbf{Số đối} của một số \(x\), kí hiệu \(-x\), là số mà khi cộng với
+\(x\) thì được \(0\). Nghĩa là
+\[
+(-x)+x=0.
+\]
+Số đối của \(x\) còn được gọi là \emph{đối} của \(x\) hay \emph{nghịch
+đảo cộng} của \(x\). Ta cũng có thể đọc \(-x\) là “âm \(x\)” hoặc “trừ \(x\)”.
+\end{tcolorbox}
+
+\noindent\textbf{Ví dụ.}
+\(-1\) là số đối của \(1\), vì \((-1)+1=0\).
+\(-2\) là số đối của \(2\), vì \((-2)+2=0\).
+Đường số cho ta thấy mọi \emph{số nguyên dương} đều có số đối rõ ràng.
+Chẳng hạn, \(-288\) là số đối của \(288\), vì \((-288)+288=0\).
+
+Có thể con hỏi: “Tại sao phải thêm từ \emph{số đối} trong khi đã có
+khái niệm \emph{số âm}?” Lý do là: ngoài các số dương, ta cũng nói về
+số đối của \(0\) và của \emph{chính các số âm}. Ví dụ, số đối của
+\(0\) là số nào? (Chút nữa ta sẽ biết.) Số đối của \(-6\) là số nào?
+(Chút nữa ta cũng sẽ biết.) Nói ngắn gọn: \emph{mọi số} — dương, âm, hay
+bằng \(0\) — đều có số đối.
+
+%----------------------------
+\begin{problem}[1.16]
+Xem các mệnh đề về \emph{số đối} dưới đây:
+\[
+\begin{aligned}
+\text{Số đối của }4 &\text{ là } -4.\\
+\text{Số đối của }3 &\text{ là } -3.\\
+\text{Số đối của }2 &\text{ là } -2.\\
+\text{Số đối của }1 &\text{ là } -1.\\
+\text{Số đối của }0 &\text{ là } 0.\\
+\text{Số đối của }-1 &\text{ là } 1.\\
+\text{Số đối của }-2 &\text{ là } 2.
+\end{aligned}
+\]
+
+\begin{enumerate}[label=(\alph*)]
+  \item Hãy nghĩ xem các số ở \emph{cuối mỗi dòng} đứng ở đâu trên
+        đường số. Sau số đầu tiên, mỗi số tiếp theo liên hệ thế nào với
+        số ngay \emph{phía trên} nó?
+  \item Dựa trên quy luật ở ý (a), số đối của \(0\) là gì?
+  \item Dựa trên quy luật ở ý (a), số đối của \(-1\) là gì?
+  \item Dựa trên quy luật ở ý (a), số đối của \(-2\) là gì?
+\end{enumerate}
+
+%============================
+% 1.4  Số đối — Bài 1.17 và nhắc lại Bài 1.16
+%============================
+
+\begin{problem}[1.17]
+Xem các phép nhân sau:
+\[
+\begin{aligned}
+4\cdot3 &= 12\\
+3\cdot3 &= 9\\
+2\cdot3 &= 6\\
+1\cdot3 &= 3\\
+0\cdot3 &= 0\\
+(-1)\cdot3 &=\ \underline{\hspace{1.8cm}}
+\end{aligned}
+\]
+\begin{enumerate}[label=(\alph*)]
+  \item Hãy đặt các số ở \emph{vế phải} lên đường số. Sau số đầu tiên,
+        mỗi số liên hệ thế nào với số ngay phía trên nó?
+  \item Dựa vào quy luật ở ý (a), \((-1)\cdot3\) nên bằng bao nhiêu?
+\end{enumerate}
+\end{problem}
+
+Mọi số đều có \emph{số đối}. Số đối của \(0\) là gì? Số đối của một số âm
+là gì? Ta kiểm tra trong bài sau.
+
+\begin{problem}[1.16]
+Xem các mệnh đề về \emph{số đối} dưới đây:
+\[
+\begin{aligned}
+\text{Số đối của }4 &\text{ là } -4.\\
+\text{Số đối của }3 &\text{ là } -3.\\
+\text{Số đối của }2 &\text{ là } -2.\\
+\text{Số đối của }1 &\text{ là } -1.\\
+\text{Số đối của }0 &\text{ là }\ \underline{\hspace{2cm}}\\
+\text{Số đối của }-1 &\text{ là }\ \underline{\hspace{2cm}}\\
+\text{Số đối của }-2 &\text{ là }\ \underline{\hspace{2cm}}
+\end{aligned}
+\]
+\begin{enumerate}[label=(\alph*)]
+  \item Quan sát vị trí các số ở \emph{cuối mỗi dòng} trên đường số.
+        Sau số đầu tiên, mỗi số liên hệ thế nào với số ngay phía trên nó?
+  \item Dựa vào quy luật ở ý (a), số đối của \(0\) là gì?
+  \item Dựa vào quy luật ở ý (a), số đối của \(-1\) là gì?
+  \item Dựa vào quy luật ở ý (a), số đối của \(-2\) là gì?
+\end{enumerate}
+\end{problem}
+
+\noindent\textbf{Lời giải cho Bài 1.16 (ý a):}
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{img/fig-numberline.pdf}
+  \caption*{\small Đường số từ \(-6\) đến \(6\).}
+\end{figure}
+
+Các số ở \emph{cuối mỗi dòng} lần lượt là \(-4,-3,-2,-1\).
+Sau số đầu tiên, mỗi số đứng \emph{dịch sang phải 1 đơn vị}
+so với số ngay phía trên nó.
+
+%============================
+% 1.4  Số đối — Lời giải (tiếp)
+%============================
+
+\noindent\textbf{Lời giải cho Bài 1.16 (tiếp):}
+\begin{enumerate}[label=(\alph*), resume]
+  \item[(b)] Quy luật ở ý (a) gợi ý rằng đáp án nằm \emph{cách $-1$ một
+  đơn vị về bên phải} trên đường số, tức là số $0$. Vậy \emph{số đối của
+  $0$} phải là $0$.
+
+  Ta cũng thấy điều này từ \emph{định nghĩa số đối}. Số đối của $0$ là số
+  mà khi cộng với $0$ cho $0$. Nghĩa là $-0$ thoả
+  \[
+  -0+0=0.
+  \]
+  Nhưng cộng $0$ không làm thay đổi số, nên $-0+0=-0$. Do đó $-0=0$.
+  Vậy \(\boxed{-0=0}\).
+
+  \item[(c)] Bắt đầu từ $0$ và đi sang phải $1$ đơn vị, ta đến $1$.
+  Vì vậy \(-(-1)\), tức \emph{số đối của $-1$}, là $1$.
+
+  Lại theo định nghĩa số đối, ta biết $1+(-1)=0$. Mặt khác, “số đối của
+  $-1$” là số mà khi cộng với $-1$ cho $0$, tức là
+  \[
+  -(-1)+(-1)=0.
+  \]
+  So sánh hai phương trình trên cho thấy \(\boxed{-(-1)=1}\).
+
+  \item[(d)] Bắt đầu từ $1$ và đi sang phải $1$ đơn vị, ta đến $2$.
+  Vậy \(-(-2)\), \emph{số đối của $-2$}, là $2$.
+
+  Ta cũng biết $2+(-2)=0$. Mà “số đối của $-2$” là số sao cho cộng với
+  $-2$ bằng $0$, tức
+  \[
+  -(-2)+(-2)=0.
+  \]
+  Do đó \(\boxed{-(-2)=2}\).
+\end{enumerate}
+
+\medskip
+Trong Bài 1.16, ta thấy $-(-1)=1$ và $-(-2)=2$. Tương tự, với \emph{mọi} số $x$,
+ta nghi ngờ rằng
+\[
+-(-x)=x.
+\]
+Tức là “đổi dấu hai lần” sẽ trả ta về số ban đầu. Mẫu hình thì rõ, nhưng
+ta cần \emph{chứng minh} đúng cho mọi $x$.
+
+\begin{tcolorbox}[colback=blue!3,colframe=blue!60!black,title={Chứng minh rằng \(-(-x)=x\) với mọi \(x\)}]
+Xét tổng
+\[
+x+(-x)+(-(-x)).
+\]
+Ở đây, ta cộng $x$, số đối của $x$ là $-x$, và số đối của $-x$ là $-(-x)$.
+Nhờ \emph{tính chất kết hợp của phép cộng}, ta nhóm theo cách bất kỳ.
+
+Nếu cộng hai số đầu trước, ta được
+\[
+x+(-x)+(-(-x))=(x+(-x))+(-(-x))=0+(-(-x))=-(-x).
+\]
+
+Ngược lại, nếu cộng hai số sau trước, vì $-(-x)$ là \emph{số đối của $-x$},
+ta có $(-x)+(-(-x))=0$. Do đó
+\[
+x+(-x)+(-(-x))=x+0=x.
+\]
+
+Hai cách cộng cho cùng một tổng, nên
+\[
+-(-x)=x
+\]
+với mọi $x$.\(\square\)
+\end{tcolorbox}
+
+\end{problem}
+
+%============================
+% 1.4  Số đối — Kết quả quan trọng & Bài 1.17
+%============================
+
+\begin{tcolorbox}[colback=yellow!10, colframe=orange!80!black,
+title={Quan trọng: Số đối của số đối}]
+Với mọi số \(x\), ta luôn có
+\[
+-(-x)=x.
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!3,colframe=red!70!black,title={Cẩn thận!}]
+Dù thường đọc \(-x\) là “âm \(x\)”, \(-x\) \emph{không nhất thiết} là số âm.
+Chẳng hạn, khi \(x=-1\) thì \(-x=1\) là số dương.  
+\emph{Số đối của một số âm là số dương.}
+\end{tcolorbox}
+
+\begin{problem}[1.17]
+Xem các phép nhân sau:
+\[
+\begin{aligned}
+4\cdot3 &= 12\\
+3\cdot3 &= 9\\
+2\cdot3 &= 6\\
+1\cdot3 &= 3\\
+0\cdot3 &= 0\\
+(-1)\cdot3 &=\ \underline{\hspace{1.8cm}}
+\end{aligned}
+\]
+\begin{enumerate}[label=(\alph*)]
+  \item Đặt các số ở \emph{vế phải} lên đường số. Sau số đầu tiên, mỗi
+        số liên hệ thế nào với số ngay phía trên nó?
+  \item Dựa theo quy luật ở ý (a), \((-1)\cdot3\) nên bằng bao nhiêu?
+\end{enumerate}
+\end{problem}
+
+\noindent\textbf{Lời giải cho Bài 1.17:}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.95\textwidth]{img/fig-numberline.pdf}
+  \caption*{\small Đường số từ \(-3\) đến \(12\).}
+\end{figure}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Các số ở vế phải lần lượt là \(12,9,6,3,0\).
+        Trên đường số, \emph{mỗi số đứng lệch sang trái 3 đơn vị}
+        so với số ngay phía trên.
+  \item Theo quy luật đó, đi sang trái \(3\) đơn vị tính từ \(0\) ta được \(-3\).
+        Do đó \(\boxed{(-1)\cdot3=-3}\).
+\end{enumerate}
+
+\medskip
+Nói bằng lời: \emph{nhân một số với \(-1\) có vẻ giống với việc lấy số đối
+của số đó}. Quy tắc này rất hữu ích: khi cần, ta có thể thay việc nhân với
+\(-1\) bằng “đổi dấu”, hoặc ngược lại — miễn cách nào giúp ta giải bài toán
+thuận tiện hơn.
+
+%============================
+% 1.4  Nhân với số âm — nhân với -1
+%============================
+
+\begin{tcolorbox}[colback=yellow!10, colframe=orange!80!black,
+title={Quan trọng: Nhân với \(-1\)}]
+Với mọi số \(x\), ta có
+\[
+(-1)x=-x,
+\]
+nghĩa là nhân với \(-1\) cho ra \emph{số đối} của \(x\).
+\end{tcolorbox}
+
+Tuy mẫu hình gợi ý điều này, nhưng \emph{mẫu hình không phải chứng minh}.
+Ta sẽ chứng minh \((-1)x\) chính là số đối của \(x\). Chỉ cần chỉ ra rằng
+\[
+(-1)x + x = 0,
+\]
+vì theo \emph{định nghĩa số đối}, số nào cộng với \(x\) cho \(0\) thì là
+số đối của \(x\).
+
+Ý tưởng “khéo” là dùng đẳng thức \(x=(1)x\) (nhân với \(1\) không đổi số).
+Khi đó:
+\[
+\begin{aligned}
+(-1)x + x &= (-1)x + (1)x && \text{(thay \(x\) bởi \((1)x\))}\\
+          &= \bigl((-1)+1\bigr)x && \text{(phân phối ngược/rút \(x\) ra ngoài)}\\
+          &= (0)x && \text{(định nghĩa số đối: \((-1)+1=0\))}\\
+          &= 0 && \text{(nhân với \(0\))}.
+\end{aligned}
+\]
+Vậy \((-1)x\) là số đối của \(x\), suy ra \(\boxed{(-1)x=-x}\).
+
+Ta có thể dùng \(-x=(-1)x\) để hiểu cách \emph{nhân với số âm}.
+
+%----------------------------
+\begin{problem}[1.18]
+Dùng đẳng thức \(-x=(-1)x\), hãy giải thích vì sao
+\[
+(-2)\cdot3 \;=\; -\,(2\cdot3).
+\]
+\end{problem}
+
+\begin{problem}[1.19]
+Dựa vào Bài 1.18, giải thích vì sao
+\[
+(-2)(-3)=2\cdot3.
+\]
+\end{problem}
+
+\begin{problem}[1.20]
+Dùng đẳng thức \(-x=(-1)x\), hãy giải thích vì sao
+\[
+-\,(4+5)=(-4)+(-5).
+\]
+\end{problem}
+
+%----------------------------
+\noindent\textbf{Lời giải cho Bài 1.18.}
+Ta biết “đổi dấu” bằng nhân với \(-1\).
+Hãy nhân với $-1$ hai lần:
+\[
+(-2)\cdot 3
+= ((-1)\cdot 2)\cdot 3 \quad\text{(nhân với $-1$)}
+= (-1)\cdot (2\cdot 3) \quad\text{(tính chất kết hợp)}
+= -(2\cdot 3) \quad\text{(nhân với $-1$).}
+\]
+Đặc biệt, vì $(-2)\cdot 3 = -(2\cdot 3)$, nên $(-2)\cdot 3 = -6$.
+
+Thực ra, chẳng có gì đặc biệt ở các số ``2'' hay ``3'' trong ví dụ trên. Làm tương tự, ta có thể chứng minh cho mọi số $x$ và $y$:
+\[
+(-x)y = -(xy).
+\]
+
+\begin{tcolorbox}[title=\textbf{Quan trọng — Nhân với phép đối},colback=white,
+  colframe=black!20!gray,sharp corners,boxrule=0.4pt]
+Cho $x$ và $y$ là các số. Khi đó
+\[
+(-x)y = -(xy), \qquad x(-y) = -(xy).
+\]
+\end{tcolorbox}
+
+
+Khi $x$ và $y$ dương, đẳng thức $(-x)y = -(xy)$ nói rằng: \emph{``số âm nhân số dương thì âm.''} Nhờ tính giao hoán, ta cũng nói ngược lại được: \emph{``số dương nhân số âm thì âm.''}
+
+\medskip
+Vậy \textbf{số âm nhân số âm} thì sao? Hãy xem ví dụ sau.
+
+\textbf{Bài toán 1.19.} Dựa vào kết quả trên, hãy giải thích vì sao
+\[
+(-2)(-3) = 2\cdot 3.
+\]
+\textbf{Lời giải.} Ta đã biết cách ``nhân với phép đối'', vậy làm điều đó hai lần:
+\[
+\begin{aligned}
+(-2)(-3) &= -\bigl(2(-3)\bigr) && \text{(nhân với phép đối)}\\
+&= -\bigl(-(2\cdot 3)\bigr) && \text{(nhân với phép đối)}\\
+&= 2\cdot 3 && \text{(số đối của số đối).}
+\end{aligned}
+\]
+Kết luận: $(-2)(-3)$ là số dương $6$.
+
+Lập luận tương tự cho mọi $x,y$, ta được quy tắc sau.
+
+\begin{tcolorbox}[title=\textbf{Quan trọng — Âm nhân âm},colback=white,
+  colframe=black!20!gray,sharp corners,boxrule=0.4pt]
+Cho $x$ và $y$ là các số. Khi đó
+\[
+(-x)(-y) = xy.
+\]
+\end{tcolorbox}
+
+
+Khi $x$ và $y$ dương, mệnh đề trên nói rằng \emph{``số âm nhân số âm thì dương.''} Nhiều bạn thường học thuộc câu vần: \emph{``Âm nhân âm ra dương.''} Giờ bạn đã biết vì sao câu vần này đúng rồi nhé!
+
+
+\subsection*{Ghi nhớ nhanh}
+\begin{enumerate}[leftmargin=*]
+  \item $(-x)y = -(xy)$ \quad (âm $\times$ dương $=$ âm).
+  \item $x(-y) = -(xy)$ \quad (dương $\times$ âm $=$ âm).
+  \item $(-x)(-y) = xy$ \quad (âm $\times$ âm $=$ dương).
+\end{enumerate}
+
+% --- HẾT NỘI DUNG ---
+
+% --- BẮT ĐẦU NỘI DUNG CHÈN VÀO BÊN TRONG \begin{document} ... ---
+
+\section*{Cộng các phép đối (negations)}
+
+Làm sao để \emph{cộng} các phép đối? Ta cùng tìm hiểu trong bài tiếp theo.
+
+\textbf{Bài toán 1.20.} Dùng sự thật $-x = (-1)x$, hãy giải thích vì sao
+\[
+-(4+5)=(-4)+(-5).
+\]
+
+\textbf{Lời giải cho Bài toán 1.20.} Ta dùng việc ``lấy đối'' cũng chính là \emph{nhân với $-1$}:
+\[
+\begin{aligned}
+-(4+5) &= (-1)(4+5) && \text{(nhân với $-1$)}\\
+&= (-1)\cdot 4 + (-1)\cdot 5 && \text{(tính chất phân phối)}\\
+&= (-4) + (-5) && \text{(nhân với $-1$).}
+\end{aligned}
+\]
+Đặc biệt, từ trên suy ra $(-4)+(-5)=-9$.
+
+Tương tự, \emph{phép đối của $x+y$} bằng \emph{phép đối của $x$ cộng với phép đối của $y$}. Nói hoa mỹ hơn: \textbf{lấy đối phân phối qua phép cộng.}
+
+\begin{tcolorbox}[title=\textbf{Quan trọng — Đối của tổng},colback=white,
+  colframe=black!20!gray,sharp corners,boxrule=0.4pt]
+Với mọi số $x,y$,
+\[
+-(x+y)=(-x)+(-y).
+\]
+\end{tcolorbox}
+
+Quy tắc này còn đúng cho tổng dài hơn. Ví dụ:
+\[
+-(x+y+z)=(-x)+(-y)+(-z).
+\]
+
+
+\subsection*{Bài tập}
+\begin{enumerate}[leftmargin=*,label=\textbf{1.4.\arabic*}]
+  \item Tính $-631 + (114+631)$.
+  \item Tổng của \emph{tất cả} các số nguyên âm lớn hơn $-5$ bằng bao nhiêu?
+  \item Tính tổng $-10 + (-9) + (-8) + \cdots + 9 + 10 + 11 + 12$?
+  \item Giá trị của $210\cdot 5 + 105\cdot (-9)$ là bao nhiêu? \textit{(Nguồn: MATHCOUNTS)}
+  \item Tính $9342 + (-438)719 + (-9340) + (-438)(-719)$? \textit{(Nguồn: MATHCOUNTS)}
+\end{enumerate}
+
+% --- HẾT NỘI DUNG ---
