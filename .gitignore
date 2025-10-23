@@ -21,7 +21,7 @@
 *.xdv
 
 # PDF files
-*.pdf
+main.pdf
 
 # Backup files
 *.bbl
