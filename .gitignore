@@ -1,0 +1,43 @@
+# LaTeX intermediate files
+.DS_Store
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.dvi
+*.nav
+*.snm
+*.vrb
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.xdv
+
+# PDF files
+*.pdf
+
+# Backup files
+*.bbl
+*.bcf
+*.blg
+*-blx.bib
+
+# Temporary files
+*.tmp
+*.bak
+*.sav
+*.dpth
+*.md5
+*.synctex(busy)
+
+# Editors
+*~
+.*.swp
+.*.swo
